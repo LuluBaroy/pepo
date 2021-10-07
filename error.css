@@ -1,0 +1,80 @@
+@font-face {
+    font-family: trueno;
+    src: url("./TruenoRg.otf");
+}
+html{
+    background-color: #578886;
+    font-family: trueno;
+}
+header{
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+#error_header{
+    background-color: #35706e;
+    position: relative;
+    display: flex;
+    width: 45%;
+    margin: auto;
+}
+#error_header img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    margin: auto;
+    z-index: 4;
+}
+#error_header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 5%;
+    z-index: 6;
+}
+#error_header div h1 a{
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+    font-size: 2em;
+    background-color: #35706e;
+    border: 4px solid #004646;
+}
+#error_header div h2{
+    font-size: 1.5em;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0 5%;
+    width: 45%;
+    margin: auto;
+    background-color: white;
+}
+section div{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section #siteCreator, section #contenuCreator{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+section div div p, section div div a, section h3 a, section a{
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,514 @@
+@font-face {
+  font-family: trueno;
+  src: url("../fonts/TruenoRg.otf"), url("../fonts/TruenoExBd.otf"), url("../fonts/TruenoExBdOl.otf"), url("../fonts/TruenoExBdOlIt.otf"), url("../fonts/TruenoLt.otf"), url("../fonts/TruenoRgIt.otf");
+}
+html {
+  overflow-x: hidden;
+  margin-top: 3rem;
+}
+
+.light {
+  background-color: #578886 !important;
+  overflow-x: hidden;
+  font-family: trueno;
+  /* Tooltip container */
+  /* Tooltip text */
+  /* Show the tooltip text when you mouse over the tooltip container */
+}
+.light main {
+  margin-top: 2rem;
+}
+.light #switch-container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 12;
+}
+.light .tooltip {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 12;
+  font-family: trueno;
+  font-weight: bold;
+  color: black;
+}
+.light .tooltip #arrow {
+  transition: all 250ms ease-in-out;
+}
+.light .tooltip:hover, .light .tooltip:focus {
+  color: white;
+  text-decoration: underline;
+}
+.light .tooltip:hover img, .light .tooltip:focus img {
+  transform: rotate(360deg);
+}
+.light .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 105%;
+  right: -2%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5%;
+  border-radius: 6px;
+  overflow-y: scroll;
+  z-index: 1;
+}
+.light .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#switch-toggle {
+  width: 80px;
+  height: 40px;
+  background-color: #b8b2b2;
+  border-radius: 30px;
+}
+#switch-toggle #luna {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  max-width: 50%;
+  max-height: 50%;
+}
+#switch-toggle #sun {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#switch-toggle.active {
+  background-color: black;
+}
+
+#switch-toggle > #switch_light_dark {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#switch-toggle.active > #switch_light_dark {
+  margin-left: 40px;
+}
+
+#button_quit {
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 8;
+  background-color: #fcbc84;
+  padding: 1%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  bottom: 5%;
+  left: 10px;
+  color: black;
+}
+#button_quit:hover, #button_quit:focus {
+  color: #35706e;
+}
+
+#button_quit_mobile {
+  background-color: #fcbc84;
+  text-transform: uppercase;
+  z-index: 8;
+  padding: 1%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  position: fixed;
+  border: none;
+  bottom: 0;
+  left: 0;
+}
+#button_quit_mobile:hover, #button_quit_mobile:focus {
+  color: #35706e;
+}
+
+.siteCreator {
+  color: black;
+  text-decoration: underline;
+}
+.siteCreator:hover, .siteCreator:focus {
+  color: #444444;
+}
+
+#button_top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  background-color: #fcbc84;
+  text-transform: uppercase;
+  z-index: 8;
+  padding: 1%;
+  font-weight: bold;
+}
+#button_top:hover, #button_top:focus {
+  color: #35706e;
+  text-decoration: none;
+}
+
+nav, details {
+  z-index: 6;
+  background-color: #fcbc84;
+}
+nav a, details a {
+  font-family: trueno;
+  font-weight: bold;
+  color: black;
+}
+nav a:hover, nav a:focus, details a:hover, details a:focus {
+  color: #35706e;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #35706e;
+  position: relative;
+}
+header img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(5%);
+  margin: auto;
+  z-index: 4;
+}
+header div {
+  position: relative;
+  top: 0;
+  padding: 5%;
+  z-index: 6;
+}
+header div h1 a {
+  color: white;
+  text-decoration: none;
+  padding: 5% 0;
+  background-color: #35706e;
+  border: 4px solid #004646;
+}
+header div h1 a:hover {
+  color: white;
+  text-decoration: none;
+}
+header div h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+section {
+  padding-top: 40%;
+  font-family: trueno;
+  font-weight: normal;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+section #section_title {
+  font-size: 1em;
+  background-color: #fcbc84;
+  font-weight: bold;
+  padding: 2% 6% 2% 2%;
+  position: absolute;
+  top: 40px;
+  left: -2%;
+}
+section #news_livret {
+  transition: all 250ms ease-in-out;
+}
+section #news_livret:hover, section #news_livret:focus {
+  transform: scale(1.25);
+}
+section #nav_about {
+  background-color: transparent;
+}
+section #nav_about a {
+  color: black;
+}
+section #nav_about a:hover {
+  color: #35706e;
+}
+section #nav_ressources {
+  background-color: transparent;
+}
+section #nav_ressources a {
+  color: black;
+}
+section #nav_ressources a:hover {
+  color: #35706e;
+}
+section #tabs_fiches img {
+  position: relative;
+  box-shadow: 0 0 6px grey;
+  transition: 1s;
+  margin-bottom: 5%;
+}
+section #tabs_fiches img:hover {
+  z-index: 12;
+  transform: scale(1.2);
+}
+section #tabs_fiches div:not(:target), section #tabs_fiches div {
+  display: none;
+}
+section #tabs_fiches div:target {
+  display: flex;
+}
+section #tabs_fiches a {
+  color: #35706e;
+  text-align: center;
+}
+section #tabs_fiches a.btn-info {
+  color: black;
+}
+section #tabs_fiches p {
+  margin-bottom: 0;
+}
+section #rappel {
+  font-size: 0.8em;
+}
+section #annuaire a, section #utils a, section #glossary a {
+  color: #35706e;
+  text-decoration: underline;
+}
+section #annuaire a:hover, section #utils a:hover, section #glossary a:hover {
+  color: #55b6b3;
+}
+section #mail_contact, section .news_link {
+  color: black;
+  font-weight: bold;
+}
+section #mail_contact:hover, section #mail_contact:focus, section .news_link:hover, section .news_link:focus {
+  color: #35706e;
+}
+section #navigation_help {
+  background-color: transparent;
+}
+section #navigation_help a {
+  color: black;
+}
+section #navigation_help a:hover {
+  color: #35706e;
+}
+section .nav_contact:hover, section .nav_contact:focus {
+  color: #35706e;
+}
+section .nav_contact img {
+  transform: scale(1);
+  transition: all 250ms ease-in-out;
+}
+section .nav_contact img:hover, section .nav_contact img:focus {
+  transform: scale(1.5);
+}
+section #mail_obstacles {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+section #mail_obstacles:hover, section #mail_obstacles:focus {
+  color: #35706e;
+}
+section .tooltip {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+section .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5%;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+section .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+section #sitemap_list {
+  margin-top: 25%;
+}
+section #sitemap_list li {
+  margin: 2% 0;
+}
+section #sitemap_list li a {
+  color: black;
+}
+section #sitemap_list li a:hover, section #sitemap_list li a:focus {
+  color: #35706e;
+}
+
+footer {
+  z-index: 8;
+  background-color: #fcbc84;
+}
+footer .nav_footer {
+  padding: 5%;
+  width: 60px;
+  height: 44px;
+}
+footer .nav_footer:hover, footer .nav_footer:focus {
+  color: #35706e;
+}
+footer .nav_footer img {
+  transform: scale(1);
+  transition: all 250ms ease-in-out;
+}
+footer .nav_footer img:hover, footer .nav_footer img:focus {
+  transform: scale(1.5);
+}
+footer #mail, footer #mail_mobile {
+  color: black;
+  font-weight: bold;
+}
+footer #mail:hover, footer #mail:focus, footer #mail_mobile:hover, footer #mail_mobile:focus {
+  color: #35706e;
+}
+
+@media screen and (min-width: 577px) {
+  .light section {
+    padding-top: 15%;
+  }
+  .light #annuaire img:not(#img_annuaire_separation) {
+    width: 25%;
+  }
+  .light footer .nav_footer {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .light #button_top {
+    right: 15px;
+  }
+  .light #button_quit_mobile {
+    left: 15px;
+  }
+  .light header div h1 {
+    font-size: 5.5em;
+    letter-spacing: 20px;
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+  .light section #nav_ressources {
+    margin-top: 25%;
+  }
+  .light section #tabs_fiches img:hover {
+    transform: scale(1.3);
+  }
+  .light footer .nav_footer {
+    width: 44px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .light section {
+    padding-top: 10%;
+  }
+  .light section #section_title {
+    left: -6% !important;
+  }
+  .light section #tabs_fiches img:hover {
+    transform: scale(1.5);
+  }
+  .light #button_top {
+    bottom: 5%;
+  }
+}
+.dark {
+  color: floralwhite;
+}
+.dark #button_quit, .dark #button_quit_mobile, .dark #button_top {
+  background-color: #1b1e21;
+  color: floralwhite;
+}
+.dark #button_quit:hover, .dark #button_quit_mobile:hover, .dark #button_top:hover {
+  background-color: #444444;
+  color: white;
+}
+.dark .tooltip .tooltiptext {
+  background-color: #1b1e21 !important;
+  color: floralwhite !important;
+}
+.dark .tooltip .tooltiptext img {
+  filter: brightness(1000%) hue-rotate(70deg) contrast(4);
+}
+.dark nav, .dark details {
+  color: floralwhite;
+  background-color: #1b1e21;
+}
+.dark nav a, .dark details a {
+  color: floralwhite;
+}
+.dark nav a:hover, .dark details a:hover {
+  background-color: #444444;
+}
+.dark section {
+  background-color: #1f4b4c !important;
+}
+.dark section #section_title {
+  background-color: #1b1e21 !important;
+  color: floralwhite !important;
+}
+.dark section #nav_about a, .dark section #nav_ressources a, .dark section #mail_contact, .dark section #mail_obstacles, .dark section #sitemap_list li a {
+  color: floralwhite;
+}
+.dark section #nav_about a:hover, .dark section #nav_ressources a:hover, .dark section #mail_contact:hover, .dark section #mail_obstacles:hover, .dark section #sitemap_list li a:hover {
+  background-color: #444444;
+}
+.dark section .img_dark {
+  filter: brightness(1000%) hue-rotate(70deg) contrast(4);
+}
+.dark section .img_dark_news {
+  filter: brightness(150%) hue-rotate(321deg) contrast(4);
+}
+.dark section .tooltip .tooltiptext {
+  background-color: #1b1e21 !important;
+  color: floralwhite !important;
+}
+.dark section #annuaire a, .dark section #utils a, .dark section #glossary a, .dark section #tabs_fiches a {
+  color: navajowhite;
+}
+.dark section #annuaire a:hover, .dark section #utils a:hover, .dark section #glossary a:hover, .dark section #tabs_fiches a:hover {
+  color: white;
+}
+.dark section .nav_contact img {
+  filter: invert(100%) !important;
+}
+.dark section #tabs_fiches img {
+  filter: invert(100%) hue-rotate(310deg);
+}
+.dark section #tabs_fiches a.btn-info {
+  color: white;
+}
+.dark section .btn-info {
+  border: #1b1e21;
+  background-color: #1b1e21;
+}
+.dark section .btn-info:hover {
+  background-color: #444444;
+  border: #444444;
+}
+.dark footer {
+  background-color: #1b1e21 !important;
+}
+.dark footer #mail, .dark footer #mail_mobile {
+  color: floralwhite !important;
+}
+.dark footer .nav_footer img {
+  filter: invert(100%) !important;
+}
+
+/*# sourceMappingURL=main.css.map */

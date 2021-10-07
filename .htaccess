@@ -1,0 +1,103 @@
+# MOD_DEFLATE COMPRESSION
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+#Pour les navigateurs incompatibles
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+#ne pas mettre en cache si ces fichiers le sont déjà
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+#les proxies doivent donner le bon contenu
+Header append Vary User-Agent env=!dont-vary
+
+# BEGIN Expire headers
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresDefault "access plus  1 year"
+ ExpiresByType image/jpg "access plus 1 year"
+ ExpiresByType image/jpeg "access plus 1 year"
+ ExpiresByType image/png "access plus 1 year"
+ ExpiresByType image/gif "access plus 1 year"
+ AddType image/x-icon .ico
+ ExpiresByType image/ico "access plus 1 year"
+ ExpiresByType image/icon "access plus 1 year"
+ ExpiresByType image/x-icon "access plus 1 year"
+ ExpiresByType text/css "access plus 1 years"
+ ExpiresByType text/javascript "access plus 1 year"
+ ExpiresByType text/html "access plus 1 year"
+ ExpiresByType application/xhtml+xml "access plus 7200 seconds"
+ ExpiresByType application/javascript A259200
+ ExpiresByType application/x-javascript "access plus 1 year"
+ ExpiresByType application/x-shockwave-flash "access plus 1 year"
+ ExpiresByType application/x-font-woff "access plus 1 year"
+ ExpiresByType application/font-sfnt "access plus 1 year"
+ ExpiresByType application/font-woff " access plus 1 year"
+ ExpiresByType application/font-woff2 " access plus 1 year"
+ ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType application/x-font-opentype "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+# END Expire headers
+
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
+ Header set Cache-Control "max-age=31556952, public"
+ </FilesMatch>
+ <FilesMatch "\\.(css)$">
+ Header set Cache-Control "max-age=31556952, public"
+ </FilesMatch>
+ <FilesMatch "\\.(js)$">
+ Header set Cache-Control "max-age=31556952, private"
+ </FilesMatch>
+<filesMatch "\\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Disable caching for scripts and other dynamic files
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+# KILL THEM ETAGS
+Header unset ETag
+FileETag none
+
+# protect wpconfig.php
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+# protect the htaccess file
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# protection de la lecture des répertoires
+Options All -Indexes
+
+ErrorDocument 404 /pages/error_404.html
+ErrorDocument 403 /pages/error_403.html
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^news$  /pages/news.html [L]
+RewriteRule ^a-propos$  /pages/about.html [L]
+RewriteRule ^cas-pratiques$  /pages/fiches.html [L]
+RewriteRule ^ressources$  /pages/ressources.html [L]
+RewriteRule ^contact$  /pages/contacts.html [L]
+RewriteRule ^plan-du-site$  /pages/sitemap.html [L]
+RewriteRule ^conditions-generales-d-utilisation$  /pages/cgu.html [L]
+RewriteRule ^$ /index.html [L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.wiquaya.org/$1 [R,L]

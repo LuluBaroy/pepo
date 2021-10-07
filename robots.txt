@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /https://wiquaya.org/index.html
+Disallow: /https://wiquaya.org/pages/fiches.html
+Disallow: /https://wiquaya.org/pages/contacts.html
+Disallow: /https://wiquaya.org/pages/cgu.html
+Disallow: /https://wiquaya.org/pages/about.html
+Disallow: /https://wiquaya.org/pages/ressources.html
+Disallow: /https://wiquaya.org/pages/sitemap.html
+
+Sitemap: https://lbwebsite.fr/sitemap.xml
