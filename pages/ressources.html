@@ -109,9 +109,9 @@
                     <img src="../assets/img/separation-1.png" class="img-fluid img_dark" alt="Image décorative de séparation">
                     <ul class="mt-3 col-12 text-center">
                         <a href="https://wiquaya.org/ressources#abolitionniste" id="abolitionnisteLink" class="d-none"></a>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex flex-column align-items-center col-2">
-                                <button onclick="copy('abolitionniste')" class="mb-2 tooltipButton">
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('abolitionniste')" class="mr-2 tooltipButton">
                                     <p class="tooltiptextButton">Copier la définition</p>
                                     <img src="../assets/img/copy.png">
                                 </button>
@@ -120,7 +120,7 @@
                                     <img src="../assets/img/share.png">
                                 </button>
                             </div>
-                            <div id="abo" class="col-10">
+                            <div id="abolitionniste" class="col-11 d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="font-weight-bold">Abolitionniste</h5>
                                 <p class="text-break text-left">
                                     Personne qui souhaite abolir le travail du sexe (voir définition <a href="#TDS">TDS</a>)
@@ -129,373 +129,1089 @@
 
                         </li>
                         <a href="https://wiquaya.org/ressources#adresseIp" id="adresseIpLink" class="d-none"></a>
-						<li class="d-flex justify-content-between align-items-center">
-                            <div id="adresseIp" class="col-10">
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('adresseIp')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('adresseIpLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div id="adresseIp" class="col-11 d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="font-weight-bold">Adresse IP</h5>
                                 <p class="text-break text-left">
                                     Série de numéro identifiant de façon unique un ordinateur sur le réseau.<br>
                                     Une IP dynamique change à chaque connexion ≠ IP fixe.
                                 </p>
                             </div>
-                            <div class="d-flex flex-column align-items-center col-2">
-                            <button onclick="copy('adresseIp')" class="mb-2 tooltipButton">
-                                <p class="tooltiptextButton">Copier la définition</p>
-                                <img src="../assets/img/copy.png">
-                            </button>
-                            <button onclick="share('adresseIpLink')" class="tooltipButton">
-                                <p class="tooltiptextButton">Partager le lien de la définition</p>
-                                <img src="../assets/img/share.png">
-                            </button>
-                        </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Anonymat</h5>
-                            <p class="text-break text-left">
-                                C’est de ne pas laisser apparaître de nom<br>
-                                Réf : <a href="https://guide.boum.org/tomes/2_en_ligne/1_comprendre/5_identites/1_definitions/">Guide d'autodéfense numérique</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#anonymat" id="anonymatLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('anonymat')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('anonymatLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div id="anonymat" class="col-11 d-flex flex-column justify-content-center align-items-center">
+                                <h5 class="font-weight-bold">Anonymat</h5>
+                                <p class="text-break text-left">
+                                    C’est de ne pas laisser apparaître de nom<br>
+                                    Réf : <a href="https://guide.boum.org/tomes/2_en_ligne/1_comprendre/5_identites/1_definitions/">Guide d'autodéfense numérique</a>
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column" id="cache">
-                            <h5 class="font-weight-bold">Cache</h5>
-                            <p class="text-break text-left">
-                                Le cache est un système de mémoire intermédiaire qui permet d’afficher plus rapidement les pages web chargées récemment dans le navigateur.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#cache" id="cacheLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('cache')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('cacheLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="cache">
+                                <h5 class="font-weight-bold d-flex mr-5">Cache</h5>
+                                <p class="text-break text-left">
+                                    Le cache est un système de mémoire intermédiaire qui permet d’afficher plus rapidement les pages web chargées récemment dans le navigateur.
+                                </p>
+                            </div>
+
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Centralisé (internet)</h5>
-                            <p class="text-break text-left">
-                                L’internet centralisé est un internet où il existe un point centralisé obligatoire et matériel.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#centralise" id="centraliseLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('centralise')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('centraliseLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="centralise">
+                                <h5 class="font-weight-bold">Centralisé (internet)</h5>
+                                <p class="text-break text-left">
+                                    L’internet centralisé est un internet où il existe un point centralisé obligatoire et matériel.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Checker ses privilèges</h5>
-                            <p class="text-break text-left">
-                               Se questionner et prendre conscience de ses privilèges inhérent à nos positions sociales.
-                            </p>
-                        </li>						
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Chiffrement</h5>
-                            <p id="chiffrement" class="text-break text-left">
-                                Opération qui consiste à transformer un message clair en un autre message, inintelligible pour un tiers : message chiffré, pour assurer le secret de la transmission.<br>
-                                Exemple : message clair : Coucou, ça va ? message chiffré : 3152131521, 31221 ? <br>
-								Il faut avoir la technique de chiffrement pour déchiffrer le message.<br>
-								Pour un mail chiffré, il faut avoir un jeu de clés (privé et publique). </p>
-							<p class="text-break text-left">
-								Bon à savoir, l'en-tête d'un mail n'est pas chiffré.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#checker-ses-privileges" id="checkerSesPrivilegesLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('checkerSesPrivileges')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('checkerSesPrivilegesLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="checkerSesPrivileges">
+                                <h5 class="font-weight-bold">Checker ses privilèges</h5>
+                                <p class="text-break text-left">
+                                    Se questionner et prendre conscience de ses privilèges inhérent à nos positions sociales.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Cisgenre</h5>
-                            <p class="text-break text-left">
-								Une personne cisgenre est une personne dont le genre de naissance correspond au genre identifié actuellement.<br> 
-								≠ Transgenre
-                            </p>
+                        <a href="https://wiquaya.org/ressources#chiffrement" id="chiffrementLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('chiffrement')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('chiffrementLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="chiffrement">
+                                <h5 class="font-weight-bold">Chiffrement</h5>
+                                <p class="text-break text-left">
+                                    Opération qui consiste à transformer un message clair en un autre message, inintelligible pour un tiers : message chiffré, pour assurer le secret de la transmission.<br>
+                                    Exemple : message clair : Coucou, ça va ? message chiffré : 3152131521, 31221 ? <br>
+                                    Il faut avoir la technique de chiffrement pour déchiffrer le message.<br>
+                                    Pour un mail chiffré, il faut avoir un jeu de clés (privé et publique). </p>
+                                <p class="text-break text-left">
+                                    Bon à savoir, l'en-tête d'un mail n'est pas chiffré.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Code source</h5>
-                            <p class="text-break text-left">
-                                En informatique, le code source est un texte qui regroupe les instructions qui composent un programme. Elles sont lisibles et écrites dans un langage de programme.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#cisgenre" id="cisgenreLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('cisgenre')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('cisgenreLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="cisgenre">
+                                <h5 class="font-weight-bold">Cisgenre</h5>
+                                <p class="text-break text-left">
+                                    Une personne cisgenre est une personne dont le genre de naissance correspond au genre identifié actuellement.<br>
+                                    ≠ Transgenre
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Code source ouvert/open source</h5>
-                            <p class="text-break text-left">
-                                C’est un code source avec une possibilité de libre redistribution, d’accès au code source et de créations de travaux dérivés (fork).
-                            </p>
+                        <a href="https://wiquaya.org/ressources#code-source" id="codeSourceLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('codeSource')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('codeSourceLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="codeSource">
+                                <h5 class="font-weight-bold">Code source</h5>
+                                <p class="text-break text-left">
+                                    En informatique, le code source est un texte qui regroupe les instructions qui composent un programme. Elles sont lisibles et écrites dans un langage de programme.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column" id="cookie">
-                            <h5 class="font-weight-bold">Cookie</h5>
-                            <p class="text-break text-left">
-                                « Les cookies sont de petits fichiers texte souvent chiffrés, situés dans les répertoires du navigateur. Ils sont utilisés par les développeurs Web pour aider les utilisateurs à naviguer efficacement sur leurs sites Web et à exécuter certaines fonctions. »
-                                <br>Réf : <a href="https://www.allaboutcookies.org">All About Cookies</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#code-source-ouvert" id="codeSourceOpenLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('codeSourceOpen')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('codeSourceOpenLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="codeSourceOpen">
+                                <h5 class="font-weight-bold">Code source ouvert/open source</h5>
+                                <p class="text-break text-left">
+                                    C’est un code source avec une possibilité de libre redistribution, d’accès au code source et de créations de travaux dérivés (fork).
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Consentement</h5>
-                            <p class="text-break text-left">
-                                Action de donner son accord – enthousiaste, libre et éclairé – à une action, à un projet.<br>
-                                Une campagne de sensibilisation sur le consentement : <a>https://www.youtube.com/watch?v=pfPoG8ZA2Tw</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#cookie" id="cookieLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('cookie')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('cookieLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="cookie">
+                                <h5 class="font-weight-bold">Cookie</h5>
+                                <p class="text-break text-left">
+                                    « Les cookies sont de petits fichiers texte souvent chiffrés, situés dans les répertoires du navigateur. Ils sont utilisés par les développeurs Web pour aider les utilisateurs à naviguer efficacement sur leurs sites Web et à exécuter certaines fonctions. »
+                                    <br>Réf : <a href="https://www.allaboutcookies.org">All About Cookies</a>
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Culture du viol</h5>
-                            <p class="text-break text-left">
-                                Croyances et pratiques sociétales qui “justifient” insidieusement la maîtrise et le corps des personnes minorisées (violences sexuelles, notamment). 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#consentement" id="consentementLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('consentement')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('consentementLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="consentement">
+                                <h5 class="font-weight-bold">Consentement</h5>
+                                <p class="text-break text-left">
+                                    Action de donner son accord – enthousiaste, libre et éclairé – à une action, à un projet.<br>
+                                    Une campagne de sensibilisation sur le consentement : <a>https://www.youtube.com/watch?v=pfPoG8ZA2Tw</a>
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Cyberharcèlement</h5>
-                            <p class="text-break text-left">
-                                C’est une forme de harcèlement conduite par différents canaux numériques.
-                            </p>
-                        </li>						
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Décentralisé (internet)</h5>
-                            <p class="text-break text-left">
-                                L’internet décentralisé est un internet qui peut fonctionner grâce au <a href="#peerToPeer">pair à pair</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#culture-du-viol" id="cultureDuViolLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('cultureDuViol')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('cultureDuViolLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="cultureDuViol">
+                                <h5 class="font-weight-bold">Culture du viol</h5>
+                                <p class="text-break text-left">
+                                    Croyances et pratiques sociétales qui “justifient” insidieusement la maîtrise et le corps des personnes minorisées (violences sexuelles, notamment).
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Derailling</h5>
-                            <p class="text-break text-left">
-                                Détourner un sujet traitant des problématiques touchant une catégorie de personnes dominées pour ramener la discussion à une problématique touchant une catégorie de personnes dominantes.
-                            </p>
-                        </li>							
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Dog pile</h5>
-                            <p class="text-break text-left">
-                                C’est une réaction collective lorsqu’une personne dit quelque chose de problématique. Un grand nombre de personnes commentent en réponse pour le lui spécifier et continuent de dénigrer le commentateur d’origine sans limite de temps.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#cyberharcelement" id="cyberharcelementLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('cyberharcelement')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('cyberharcelementLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="cyberharcelement">
+                                <h5 class="font-weight-bold">Cyberharcèlement</h5>
+                                <p class="text-break text-left">
+                                    C’est une forme de harcèlement conduite par différents canaux numériques.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Doxx</h5>
-                            <p class="text-break text-left">
-                                Publier les informations personnelles de quelqu’un-e sans son consentement sur internet.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#decentralise" id="decentraliseLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('decentralise')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('decentraliseLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="decentralise">
+                                <h5 class="font-weight-bold">Décentralisé (internet)</h5>
+                                <p class="text-break text-left">
+                                    L’internet décentralisé est un internet qui peut fonctionner grâce au <a href="#peerToPeer">pair à pair</a>
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Drag (queen/king)</h5>
-                            <p class="text-break text-left">
-                                Mot anglais pour travestissement. S’habiller d’une manière non conforme à son genre. C’est une activité et non une identité de genre.<br>
-								≠ Transgenre   
-                            </p>
-                        </li>						
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">GAFAM</h5>
-                            <p class="text-break text-left">
-                                Géants du web qui sont Google, Amazon, Facebook, Apple, Microsoft
-                            </p>
+                        <a href="https://wiquaya.org/ressources#derailling" id="deraillingLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('derailling')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('deraillingLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="derailling">
+                                <h5 class="font-weight-bold">Derailling</h5>
+                                <p class="text-break text-left">
+                                    Détourner un sujet traitant des problématiques touchant une catégorie de personnes dominées pour ramener la discussion à une problématique touchant une catégorie de personnes dominantes.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Genre</h5>
-                            <p class="text-break text-left">
-                                ≠ Sexe<br>
-								Le genre concerne des aspects psychologiques et sociaux. C’est un nom qui correspond à plusieurs idées et domaines d’études centrés sur les questions de ce que cela signifie d’être un homme, une femme, une personne non-binaire, autres.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#dog-pile" id="dogPileLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('dogPile')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('dogPileLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="dogPile">
+                                <h5 class="font-weight-bold">Dog pile</h5>
+                                <p class="text-break text-left">
+                                    C’est une réaction collective lorsqu’une personne dit quelque chose de problématique. Un grand nombre de personnes commentent en réponse pour le lui spécifier et continuent de dénigrer le commentateur d’origine sans limite de temps.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Grossophobie</h5>
-                            <p class="text-break text-left">
-                                Stigamatisation d’une personne grosse que ce soit dans le domaine privé (rapport à la nourriture), le domaine professionnel (cliché de la grosse fainéante), le domaine social, etc.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#doxx" id="doxxLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('doxx')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('doxxLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="doxx">
+                                <h5 class="font-weight-bold">Doxx</h5>
+                                <p class="text-break text-left">
+                                    Publier les informations personnelles de quelqu’un-e sans son consentement sur internet.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Harcèlement</h5>
-                            <p class="text-break text-left">
-                                C’est un enchaînement d’agissements hostiles répétés qui affaiblit psychologiquement la personne victime.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#dragqueen-dragking" id="dragQueenDragKingLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('dragQueenDragKing')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('dragQueenDragKingLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="dragQueenDragKing">
+                                <h5 class="font-weight-bold">Drag (queen/king)</h5>
+                                <p class="text-break text-left">
+                                    Mot anglais pour travestissement. S’habiller d’une manière non conforme à son genre. C’est une activité et non une identité de genre.<br>
+                                    ≠ Transgenre
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Hosts (fichier)</h5>
-                            <p class="text-break text-left">
-                                Fichier utilisé par le système d’exploitation d’un ordinateur lors de l’accès à internet. Il contient l’IP locale et éventuellement l’adresse des serveurs web.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#gafam" id="gafamLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('gafam')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('gafamLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="gafam">
+                                <h5 class="font-weight-bold">GAFAM</h5>
+                                <p class="text-break text-left">
+                                    Géants du web qui sont Google, Amazon, Facebook, Apple, Microsoft
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Internet</h5>
-                            <p class="text-break text-left">
-                                Système de télécommunications informatiques au niveau international assez conséquent qui permet d’accéder à plein de données de tous genres tels que des vidéos, des textes, des sites, des images, etc.
-                            </p>
-                        </li>	
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Intersectionnalité</h5>
-                            <p class="text-break text-left">
-                                Intersection des oppressions. Manières dont elles s’imbriquent et multiplient les freins. C’est l’universitaire afroféministe américaine Kimberlé Williams Crenshaw qui a proposé ce terme pour parler spécifiquement de l’intersection entre le sexisme et le racisme.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#genre" id="genreLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('genre')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('genreLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="genre">
+                                <h5 class="font-weight-bold">Genre</h5>
+                                <p class="text-break text-left">
+                                    ≠ Sexe<br>
+                                    Le genre concerne des aspects psychologiques et sociaux. C’est un nom qui correspond à plusieurs idées et domaines d’études centrés sur les questions de ce que cela signifie d’être un homme, une femme, une personne non-binaire, autres.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Intersexuation</h5>
-                            <p class="text-break text-left">
-                                Désigne la situation sociale des personnes nées avec des caractéristiques sexuelles primaires et/ou secondaires considérées comme ne correspondant pas aux définitions sociales et médicales typiques du “féminin” et du “masculin”.<br>
-								≠ Dyadique 
-								<br>Réf : <a href="https://www.cia-oiifrance.org">Collectif Intersexes et Allié-e-s</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#grossophobie" id="grossophobieLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('grossophobie')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('grossophobieLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="grossophobie">
+                                <h5 class="font-weight-bold">Grossophobie</h5>
+                                <p class="text-break text-left">
+                                    Stigamatisation d’une personne grosse que ce soit dans le domaine privé (rapport à la nourriture), le domaine professionnel (cliché de la grosse fainéante), le domaine social, etc.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Invisibiliser</h5>
-                            <p class="text-break text-left">
-                                Parler d’un groupe de manière générale en oubliant ou omettant les oppressions de certaines personnes de ce groupe.
-                            </p>
-                        </li>	
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">IRL</h5>
-                            <p class="text-break text-left">
-                                Acronyme de In Real Life = Dans la Vraie Vie. IRL marque la dichotomie entre monde réel/monde virtuel oumonde en ligne/monde hors connexion.
-                            </p>
-                        </li>						
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">IRC</h5>
-                            <p class="text-break text-left">
-								Acronyme de Internet Relay Chat = Discussion relayée par internet.<br> 
-								C’est un protocole textuel de communication instantanée sur internet.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#harcelement" id="harcelementLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('harcelement')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('harcelementLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="harcelement">
+                                <h5 class="font-weight-bold">Harcèlement</h5>
+                                <p class="text-break text-left">
+                                    C’est un enchaînement d’agissements hostiles répétés qui affaiblit psychologiquement la personne victime.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">LGBTI+</h5>
-                            <p class="text-break text-left">
-                                Acronyme regroupant les communautés lesbiennes, gays, bi, trans, queer, intersexes, asexuels et aromantiques.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#hosts" id="hostsLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('hosts')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('hostsLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="hosts">
+                                <h5 class="font-weight-bold">Hosts (fichier)</h5>
+                                <p class="text-break text-left">
+                                    Fichier utilisé par le système d’exploitation d’un ordinateur lors de l’accès à internet. Il contient l’IP locale et éventuellement l’adresse des serveurs web.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Log</h5>
-                            <p class="text-break text-left">
-                                Journal d’évènements d’une machine (un ordinateur, par exemple).   
-                            </p>
+                        <a href="https://wiquaya.org/ressources#internet" id="internetLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('internet')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('internetLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="internet">
+                                <h5 class="font-weight-bold">Internet</h5>
+                                <p class="text-break text-left">
+                                    Système de télécommunications informatiques au niveau international assez conséquent qui permet d’accéder à plein de données de tous genres tels que des vidéos, des textes, des sites, des images, etc.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Login name</h5>
-                            <p class="text-break text-left">
-                                Nom par lequel on identifie un-e utilisateur-ice lors d’une connexion. sur un serveur.<br>
-								= nom d’utilisateur
-                            </p>
-                        </li>						
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Métadonnées</h5>
-                            <p class="text-break text-left">
-                                Les photos postées sur la toile contiennent souvent bien plus d’informations que nous le souhaitons. Par exemple la date et l’heure de la prise de vue ou les coordonnées GPS sont très faciles à trouver.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#intersectionnalite" id="intersectionnaliteLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('intersectionnalite')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('intersectionnaliteLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="intersectionnalite">
+                                <h5 class="font-weight-bold">Intersectionnalité</h5>
+                                <p class="text-break text-left">
+                                    Intersection des oppressions. Manières dont elles s’imbriquent et multiplient les freins. C’est l’universitaire afroféministe américaine Kimberlé Williams Crenshaw qui a proposé ce terme pour parler spécifiquement de l’intersection entre le sexisme et le racisme.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column" id="threatModel">
-                            <h5 class="font-weight-bold">Modèle de menace</h5>
-                            <p class="text-break text-left">
-                                Le modèle de menace est un processus par lequel des menaces potentielles peuvent être identifiées, énumérées et classées par ordre de priorité, du point de vue de l’hypothétique agresseur.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#intersexuation" id="intersexuationLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('intersexuation')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('intersexuationLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="intersexuation">
+                                <h5 class="font-weight-bold">Intersexuation</h5>
+                                <p class="text-break text-left">
+                                    Désigne la situation sociale des personnes nées avec des caractéristiques sexuelles primaires et/ou secondaires considérées comme ne correspondant pas aux définitions sociales et médicales typiques du “féminin” et du “masculin”.<br>
+                                    ≠ Dyadique
+                                    <br>Réf : <a href="https://www.cia-oiifrance.org">Collectif Intersexes et Allié-e-s</a>
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Mot de passe</h5>
-                            <p class="text-break text-left">
-								Série de lettres, chiffres, caractères spéciaux secrète pour protéger la connexion d’un-e utilisateur-ice sur un serveur.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#invisibiliser" id="invisibiliserLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('invisibiliser')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('invisibiliserLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="invisibiliser">
+                                <h5 class="font-weight-bold">Invisibiliser</h5>
+                                <p class="text-break text-left">
+                                    Parler d’un groupe de manière générale en oubliant ou omettant les oppressions de certaines personnes de ce groupe.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Moteur de recherche</h5>
-                            <p class="text-break text-left">
-								Logiciel permettant de trouver une information sur internet à partir de mots-clés.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#irl" id="irlLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('irl')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('irlLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="irl">
+                                <h5 class="font-weight-bold">IRL</h5>
+                                <p class="text-break text-left">
+                                    Acronyme de In Real Life = Dans la Vraie Vie. IRL marque la dichotomie entre monde réel/monde virtuel oumonde en ligne/monde hors connexion.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Navigateur</h5>
-                            <p class="text-break text-left">
-								Logiciel permettant de se déplacer sur le web.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#irc" id="ircLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('irc')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('ircLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="irc">
+                                <h5 class="font-weight-bold">IRC</h5>
+                                <p class="text-break text-left">
+                                    Acronyme de Internet Relay Chat = Discussion relayée par internet.<br>
+                                    C’est un protocole textuel de communication instantanée sur internet.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Navigation privée</h5>
-                            <p class="text-break text-left">
-                                La navigation privée permet de naviguer sans enregistrer l’historique et les cookies<br>
-                                <a href="https://support.mozilla.org/fr/kb/idees-recues-sur-navigation-privee">Idées reçues sur la navigation privée</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#lgbti+" id="lgbti+Link" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('lgbti+')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('lgbti+Link')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="lgbti+">
+                                <h5 class="font-weight-bold">LGBTI+</h5>
+                                <p class="text-break text-left">
+                                    Acronyme regroupant les communautés lesbiennes, gays, bi, trans, queer, intersexes, asexuels et aromantiques.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Neurodivergent</h5>
-                            <p class="text-break text-left">
-								Un mot « parapluie » pour une personne ayant un handicap développemental, intellectuel, cognitif, ou une maladie psychique.Fonctionnement différent de ce qui est considéré socialement comme la norme.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#log" id="logLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('log')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('logLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="log">
+                                <h5 class="font-weight-bold">Log</h5>
+                                <p class="text-break text-left">
+                                    Journal d’évènements d’une machine (un ordinateur, par exemple).
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Outer quelqu’un-e</h5>
-                            <p class="text-break text-left">
-                                Obliger quelqu’un-e à « sortir du placard ». Révéler son orientation sexuelle, son identité de genre, autres, sans son consentement.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#login-name" id="loginNameLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('loginName')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('loginNameLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="loginName">
+                                <h5 class="font-weight-bold">Login name</h5>
+                                <p class="text-break text-left">
+                                    Nom par lequel on identifie un-e utilisateur-ice lors d’une connexion. sur un serveur.<br>
+                                    = nom d’utilisateur
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold" id="peerToPeer">Pair à pair</h5>
-                            <p class="text-break text-left">
-                                Technologie qui permet l’échange direct de données entre ordinateurs reliés à Internet, sans passer par un serveur central.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#metadonnees" id="metadonneesLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('metadonnees')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('metadonneesLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="metadonnees">
+                                <h5 class="font-weight-bold">Métadonnées</h5>
+                                <p class="text-break text-left">
+                                    Les photos postées sur la toile contiennent souvent bien plus d’informations que nous le souhaitons. Par exemple la date et l’heure de la prise de vue ou les coordonnées GPS sont très faciles à trouver.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Privilège</h5>
-                            <p class="text-break text-left">
-                                Désigne un effet systémique par lequel un individu à accès plus facilement à des ressources que d’autres individus non privilégiés.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#modele-de-menace" id="threatModelLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('threatModel')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('threatModelLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="threatModel">
+                                <h5 class="font-weight-bold">Modèle de menace</h5>
+                                <p class="text-break text-left">
+                                    Le modèle de menace est un processus par lequel des menaces potentielles peuvent être identifiées, énumérées et classées par ordre de priorité, du point de vue de l’hypothétique agresseur.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Pro-choix</h5>
-                            <p class="text-break text-left">
-                                Dans la même veine que le slogan “mon corps, mon choix”. Les personnes pro-choix revendiquent une liberté dans la gestion de son corps notamment par le droit sans condition à l’avortement.   
-                            </p>
+                        <a href="https://wiquaya.org/ressources#mot-de-passe" id="motDePasseLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('motDePasse')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('motDePasseLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="motDePasse">
+                                <h5 class="font-weight-bold">Mot de passe</h5>
+                                <p class="text-break text-left">
+                                    Série de lettres, chiffres, caractères spéciaux secrète pour protéger la connexion d’un-e utilisateur-ice sur un serveur.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Pseudonymat</h5>
-                            <p class="text-break text-left">
-                                Le pseudonymat c’est choisir et utiliser un nom différent de son identité civil<br>
-                                Réf : <a href="https://guide.boum.org/tomes/2_en_ligne/1_comprendre/5_identites/1_definitions/">Guide d'autodéfense numérique</a>
-                            </p>
+                        <a href="https://wiquaya.org/ressources#moteur-de-recherche" id="moteurDeRechercheLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('moteurDeRecherche')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('moteurDeRechercheLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="moteurDeRecherche">
+                                <h5 class="font-weight-bold">Moteur de recherche</h5>
+                                <p class="text-break text-left">
+                                    Logiciel permettant de trouver une information sur internet à partir de mots-clés.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Psychophobie</h5>
-                            <p class="text-break text-left">
-                                Oppression systémique à l’égar des personnes supposées ou non patientes de la psychiatrie et des personnes neuroatypique.   
-                            </p>
+                        <a href="https://wiquaya.org/ressources#navigateur" id="navigateurLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('navigateur')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('navigateurLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="navigateur">
+                                <h5 class="font-weight-bold">Navigateur</h5>
+                                <p class="text-break text-left">
+                                    Logiciel permettant de se déplacer sur le web.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Queer</h5>
-                            <p class="text-break text-left">
-                                Queer est une insulte anglaise signifiant « étrange », « bizarre ». Elle était utilisée pour désigner l’ensemble des minorités sexuelles et de genres qui diffèrent de l’hétérosexualité ou la cisidentité qui se la sont réappropriée. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#navigation-privee" id="navigationPriveeLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('navigationPrivee')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('navigationPriveeLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="navigationPrivee">
+                                <h5 class="font-weight-bold">Navigation privée</h5>
+                                <p class="text-break text-left">
+                                    La navigation privée permet de naviguer sans enregistrer l’historique et les cookies<br>
+                                    <a href="https://support.mozilla.org/fr/kb/idees-recues-sur-navigation-privee">Idées reçues sur la navigation privée</a>
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Racisme</h5>
-                            <p class="text-break text-left">
-                                Construction sociale qui dissocie les personnes blanches des autres sur la plan personnel, professionnel, social, etc. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#neurodivergent" id="neurodivergentLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('neurodivergent')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('neurodivergentLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="neurodivergent">
+                                <h5 class="font-weight-bold">Neurodivergent</h5>
+                                <p class="text-break text-left">
+                                    Un mot « parapluie » pour une personne ayant un handicap développemental, intellectuel, cognitif, ou une maladie psychique.Fonctionnement différent de ce qui est considéré socialement comme la norme.
+                                </p>
+                            </div>
                         </li>
-                        <li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Revenge porn</h5>
-                            <p class="text-break text-left">
-                                Contenu sexuellement explicite qui est publiquement partagé en ligne sans le consentement de la personne apparaissant sur le contenu.
-                            </p>
+                        <a href="https://wiquaya.org/ressources#outer-quelqu-un" id="outerQuelquUnLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('outerQuelquUn')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('outerQuelquUnLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="outerQuelquUn">
+                                <h5 class="font-weight-bold">Outer quelqu’un-e</h5>
+                                <p class="text-break text-left">
+                                    Obliger quelqu’un-e à « sortir du placard ». Révéler son orientation sexuelle, son identité de genre, autres, sans son consentement.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Sexisme</h5>
-                            <p class="text-break text-left">
-                                Discrimination fondée sur le genre. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#pair-a-pair" id="pairAPairLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('pairAPair')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('pairAPairLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="pairAPair">
+                                <h5 class="font-weight-bold" id="peerToPeer">Pair à pair</h5>
+                                <p class="text-break text-left">
+                                    Technologie qui permet l’échange direct de données entre ordinateurs reliés à Internet, sans passer par un serveur central.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Systémique</h5>
-                            <p class="text-break text-left">
-                                Qui agit sur un système, à l’échelle d’un système. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#privilege" id="privilegeLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('privilege')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('privilegeLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="privilege">
+                                <h5 class="font-weight-bold">Privilège</h5>
+                                <p class="text-break text-left">
+                                    Désigne un effet systémique par lequel un individu à accès plus facilement à des ressources que d’autres individus non privilégiés.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold" id="TDS">TDS</h5>
-                            <p class="text-break text-left">
-                                Acronyme pour parler du travail du sexe/travailleur-se du sexe.<br>
-								C’est une profession qui consiste à avoir des rapports sexualisés tarifés avec autrui. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#pro-choix" id="proChoixLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('proChoix')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('proChoixLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="proChoix">
+                                <h5 class="font-weight-bold">Pro-choix</h5>
+                                <p class="text-break text-left">
+                                    Dans la même veine que le slogan “mon corps, mon choix”. Les personnes pro-choix revendiquent une liberté dans la gestion de son corps notamment par le droit sans condition à l’avortement.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Transgenre</h5>
-                            <p class="text-break text-left">
-                                Une personne transgenre est une personne dont le genre de naissance ne correspond pas au genre identifié actuellement. <br>
-								≠ Cisgenre  
-                            </p>
+                        <a href="https://wiquaya.org/ressources#pseudonymat" id="pseudonymatLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('pseudonymat')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('pseudonymatLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="pseudonymat">
+                                <h5 class="font-weight-bold">Pseudonymat</h5>
+                                <p class="text-break text-left">
+                                    Le pseudonymat c’est choisir et utiliser un nom différent de son identité civil<br>
+                                    Réf : <a href="https://guide.boum.org/tomes/2_en_ligne/1_comprendre/5_identites/1_definitions/">Guide d'autodéfense numérique</a>
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Validisme</h5>
-                            <p class="text-break text-left">
-                                Discrimination systémique envers les personnes handicapées psychiques, mentales et/ou physiques. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#psychophobie" id="psychophobieLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('psychophobie')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('psychophobieLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="psychophobie">
+                                <h5 class="font-weight-bold">Psychophobie</h5>
+                                <p class="text-break text-left">
+                                    Oppression systémique à l’égar des personnes supposées ou non patientes de la psychiatrie et des personnes neuroatypique.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold" id="defVPN">VPN</h5>
-                            <p class="text-break text-left">
-                                C'est un réseau privé virtuel (Virtual Private Network). Il permet d'échanger des informations de manière sécurisée et anonyme en utilisant une adresse IP différente de celle de mon ordinateur. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#queer" id="queerLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('queer')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('queerLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="queer">
+                                <h5 class="font-weight-bold">Queer</h5>
+                                <p class="text-break text-left">
+                                    Queer est une insulte anglaise signifiant « étrange », « bizarre ». Elle était utilisée pour désigner l’ensemble des minorités sexuelles et de genres qui diffèrent de l’hétérosexualité ou la cisidentité qui se la sont réappropriée.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Wi-Fi</h5>
-                            <p class="text-break text-left">
-                                Protocole de communication permettant de connecter des machines dans un réseau informatique, sans qu'elles soient connectées à l'aide de câbles réseau. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#racisme" id="racismeLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('racisme')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('racismeLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="racisme">
+                                <h5 class="font-weight-bold">Racisme</h5>
+                                <p class="text-break text-left">
+                                    Construction sociale qui dissocie les personnes blanches des autres sur la plan personnel, professionnel, social, etc.
+                                </p>
+                            </div>
                         </li>
-						<li class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Wi-Fi ouvert</h5>
-                            <p class="text-break text-left">
-                                Wi-Fi public, gratuit auquel tout le monde (beaucoup de monde) peut y accéder. Généralement, il n'y a pas besoin d'un mot de passe pour y accéder. 
-                            </p>
+                        <a href="https://wiquaya.org/ressources#revenge-porn" id="revengePornLink" class="d-none"></a>
+                        <li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('revengePorn')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('revengePornLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="revengePorn">
+                                <h5 class="font-weight-bold">Revenge porn</h5>
+                                <p class="text-break text-left">
+                                    Contenu sexuellement explicite qui est publiquement partagé en ligne sans le consentement de la personne apparaissant sur le contenu.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#sexisme" id="sexismeLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('sexisme')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('sexismeLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="sexisme">
+                                <h5 class="font-weight-bold">Sexisme</h5>
+                                <p class="text-break text-left">
+                                    Discrimination fondée sur le genre.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#systemique" id="systemiqueLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('systemique')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('systemiqueLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="systemique">
+                                <h5 class="font-weight-bold">Systémique</h5>
+                                <p class="text-break text-left">
+                                    Qui agit sur un système, à l’échelle d’un système.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#tds" id="TDSLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('TDS')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('TDSLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="TDS">
+                                <h5 class="font-weight-bold">TDS</h5>
+                                <p class="text-break text-left">
+                                    Acronyme pour parler du travail du sexe/travailleur-se du sexe.<br>
+                                    C’est une profession qui consiste à avoir des rapports sexualisés tarifés avec autrui.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#transgenre" id="transgenreLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('transgenre')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('transgenreLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="transgenre">
+                                <h5 class="font-weight-bold">Transgenre</h5>
+                                <p class="text-break text-left">
+                                    Une personne transgenre est une personne dont le genre de naissance ne correspond pas au genre identifié actuellement. <br>
+                                    ≠ Cisgenre
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#validisme" id="validismeLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('validisme')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('validismeLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="validisme">
+                                <h5 class="font-weight-bold">Validisme</h5>
+                                <p class="text-break text-left">
+                                    Discrimination systémique envers les personnes handicapées psychiques, mentales et/ou physiques.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#vpn" id="vpnLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('defVPN')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('vpnLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="defVPN">
+                                <h5 class="font-weight-bold">VPN</h5>
+                                <p class="text-break text-left">
+                                    C'est un réseau privé virtuel (Virtual Private Network). Il permet d'échanger des informations de manière sécurisée et anonyme en utilisant une adresse IP différente de celle de mon ordinateur.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#wi-fi" id="wiFiLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('wiFi')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('wiFiLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="wiFi">
+                                <h5 class="font-weight-bold">Wi-Fi</h5>
+                                <p class="text-break text-left">
+                                    Protocole de communication permettant de connecter des machines dans un réseau informatique, sans qu'elles soient connectées à l'aide de câbles réseau.
+                                </p>
+                            </div>
+                        </li>
+                        <a href="https://wiquaya.org/ressources#wi-fi-ouvert" id="wiFiOuvertLink" class="d-none"></a>
+						<li class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex align-items-center tooltipBox">
+                                <button onclick="copy('wiFiOuvert')" class="mr-2 tooltipButton">
+                                    <p class="tooltiptextButton">Copier la définition</p>
+                                    <img src="../assets/img/copy.png">
+                                </button>
+                                <button onclick="share('wiFiOuvertLink')" class="tooltipButton">
+                                    <p class="tooltiptextButton">Partager le lien de la définition</p>
+                                    <img src="../assets/img/share.png">
+                                </button>
+                            </div>
+                            <div class="d-flex flex-column col-11 justify-content-center align-items-center" id="wiFiOuvert">
+                                <h5 class="font-weight-bold">Wi-Fi ouvert</h5>
+                                <p class="text-break text-left">
+                                    Wi-Fi public, gratuit auquel tout le monde (beaucoup de monde) peut y accéder. Généralement, il n'y a pas besoin d'un mot de passe pour y accéder.
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </article>

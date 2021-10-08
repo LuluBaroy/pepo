@@ -64,6 +64,11 @@ html{
     overflow-y: scroll;
     z-index: 1;
   }
+  .tooltipBox{
+    position: relative;
+    top: 25%;
+    right: 5%;
+  }
   .tooltipButton {
     z-index: 10;
     display: inline-block;
@@ -341,12 +346,14 @@ html{
     }
     #glossary button{
       border: 2px solid #35706e;
-      border-radius: 50px;
+      border-radius: 25px;
       background-color: transparent;
       padding: 0;
+      width: 30px;
+      height: 30px;
       img{
-        width: 50%;
-        padding: 25% 0;
+        max-width: 70%;
+        padding: 0 5% 15% 5%;
       }
       transition: all 150ms ease-in-out;
       &:hover, &:focus{
