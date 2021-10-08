@@ -64,9 +64,26 @@ html{
     overflow-y: scroll;
     z-index: 1;
   }
+  .tooltipButton {
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+  }
+  .tooltipButton .tooltiptextButton {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    border: 2px solid #35706e;
+    color: black;
+    border-radius: 6px;
+    padding: 5%;
+    position: absolute;
+    left: -70%;
+    bottom: 75%;
+    z-index: 1;
+  }
 
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover .tooltiptext, .tooltipButton:hover .tooltiptextButton{
     visibility: visible;
   }
 }
@@ -322,7 +339,20 @@ html{
         color: #55b6b3;
       }
     }
-
+    #glossary button{
+      border: 2px solid #35706e;
+      border-radius: 50px;
+      background-color: transparent;
+      padding: 0;
+      img{
+        width: 50%;
+        padding: 25% 0;
+      }
+      transition: all 150ms ease-in-out;
+      &:hover, &:focus{
+        background-color: rgba(53, 112, 110, 0.26);
+      }
+    }
     #mail_contact, .news_link {
       color: black;
       font-weight: bold;
@@ -365,31 +395,6 @@ html{
       &:hover, &:focus {
         color: #35706e;
       }
-    }
-
-    .tooltip {
-      position: relative;
-      z-index: 10;
-      display: inline-block;
-      border-bottom: 1px dotted black;
-    }
-
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 120px;
-      background-color: black;
-      color: #fff;
-      text-align: left;
-      border-radius: 6px;
-      padding: 5%;
-      position: absolute;
-      z-index: 1;
-      top: -5px;
-      left: 105%;
-    }
-
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
     }
 
     #sitemap_list {
