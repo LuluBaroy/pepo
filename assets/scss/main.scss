@@ -29,8 +29,8 @@ html{
   }
   /* Tooltip container */
   .tooltip {
-    position: fixed;
-    top: 5%;
+    position: absolute;
+    top: 6%;
     right: 5%;
     z-index: 12;
     font-family: trueno;
@@ -57,12 +57,15 @@ html{
     top: 105%;
     right: -2%;
     background-color: white;
+    border: 2px solid black;
     color: black;
     text-align: center;
     padding: 5%;
     border-radius: 6px;
-    overflow-y: scroll;
     z-index: 1;
+  }
+  .tooltiptext{
+    font-size: 12px;
   }
   .tooltipBox{
     position: relative;
@@ -83,13 +86,25 @@ html{
     border-radius: 6px;
     padding: 5%;
     position: absolute;
-    left: -70%;
+    left: -175%;
     bottom: 75%;
     z-index: 1;
   }
-
-  .tooltip:hover .tooltiptext, .tooltipButton:hover .tooltiptextButton{
-    visibility: visible;
+  #glossary button, #utils button{
+    border: 2px solid #35706e;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    img{
+      max-width: 70%;
+      padding: 0 5% 15% 5%;
+    }
+    transition: all 150ms ease-in-out;
+    &:hover, &:focus{
+      background-color: rgba(53, 112, 110, 0.26);
+    }
   }
 }
 
@@ -344,22 +359,7 @@ html{
         color: #55b6b3;
       }
     }
-    #glossary button{
-      border: 2px solid #35706e;
-      border-radius: 25px;
-      background-color: transparent;
-      padding: 0;
-      width: 30px;
-      height: 30px;
-      img{
-        max-width: 70%;
-        padding: 0 5% 15% 5%;
-      }
-      transition: all 150ms ease-in-out;
-      &:hover, &:focus{
-        background-color: rgba(53, 112, 110, 0.26);
-      }
-    }
+
     #mail_contact, .news_link {
       color: black;
       font-weight: bold;
@@ -370,10 +370,8 @@ html{
     }
     #navigation_help{
       background-color: transparent;
-
       a {
         color: black;
-
         &:hover {
           color: #35706e;
         }
@@ -524,6 +522,12 @@ html{
         #button_top{
           bottom: 5%;
         }
+      .tooltip{
+        position: fixed;
+      }
+    }
+    .tooltip:hover .tooltiptext, .tooltipButton:hover .tooltiptextButton{
+      visibility: visible;
     }
 
 }
@@ -544,6 +548,15 @@ html{
       filter: brightness(1000%) hue-rotate(70deg) contrast(4);
     }
   }
+  .tooltip{
+    color: floralwhite;
+    img{
+      filter: invert(4);
+    }
+    &:hover{
+      color: #444444;
+    }
+  }
   nav, details{
     color: floralwhite;
     background-color: #1b1e21;
@@ -553,6 +566,10 @@ html{
         background-color: #444444;
       }
     }
+  }
+  .tooltiptextButton {
+    background-color: #1b1e21 !important;
+    color: floralwhite !important;
   }
   section{
     background-color: #1f4b4c !important;
@@ -573,14 +590,21 @@ html{
     .img_dark_news{
       filter: brightness(150%) hue-rotate(321deg) contrast(4);
     }
-    .tooltip .tooltiptext {
-      background-color: #1b1e21 !important;
-      color: floralwhite !important;
-    }
+
     #annuaire a, #utils a, #glossary a, #tabs_fiches a{
       color: navajowhite;
       &:hover{
         color: white;
+      }
+    }
+    #glossary button, #utils button{
+      border: 2px solid floralwhite;
+      img{
+        filter: invert(4);
+      }
+      transition: all 150ms ease-in-out;
+      &:hover, &:focus{
+        background-color: rgba(255, 250, 240, 0.58);
       }
     }
     .nav_contact img{

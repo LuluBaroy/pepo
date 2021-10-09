@@ -24,8 +24,8 @@ html {
   z-index: 12;
 }
 .light .tooltip {
-  position: fixed;
-  top: 5%;
+  position: absolute;
+  top: 6%;
   right: 5%;
   z-index: 12;
   font-family: trueno;
@@ -50,12 +50,15 @@ html {
   top: 105%;
   right: -2%;
   background-color: white;
+  border: 2px solid black;
   color: black;
   text-align: center;
   padding: 5%;
   border-radius: 6px;
-  overflow-y: scroll;
   z-index: 1;
+}
+.light .tooltiptext {
+  font-size: 12px;
 }
 .light .tooltipBox {
   position: relative;
@@ -76,12 +79,25 @@ html {
   border-radius: 6px;
   padding: 5%;
   position: absolute;
-  left: -70%;
+  left: -175%;
   bottom: 75%;
   z-index: 1;
 }
-.light .tooltip:hover .tooltiptext, .light .tooltipButton:hover .tooltiptextButton {
-  visibility: visible;
+.light #glossary button, .light #utils button {
+  border: 2px solid #35706e;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  transition: all 150ms ease-in-out;
+}
+.light #glossary button img, .light #utils button img {
+  max-width: 70%;
+  padding: 0 5% 15% 5%;
+}
+.light #glossary button:hover, .light #glossary button:focus, .light #utils button:hover, .light #utils button:focus {
+  background-color: rgba(53, 112, 110, 0.26);
 }
 
 #switch-toggle {
@@ -305,22 +321,6 @@ section #annuaire a, section #utils a, section #glossary a {
 section #annuaire a:hover, section #utils a:hover, section #glossary a:hover {
   color: #55b6b3;
 }
-section #glossary button {
-  border: 2px solid #35706e;
-  border-radius: 25px;
-  background-color: transparent;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  transition: all 150ms ease-in-out;
-}
-section #glossary button img {
-  max-width: 70%;
-  padding: 0 5% 15% 5%;
-}
-section #glossary button:hover, section #glossary button:focus {
-  background-color: rgba(53, 112, 110, 0.26);
-}
 section #mail_contact, section .news_link {
   color: black;
   font-weight: bold;
@@ -442,6 +442,13 @@ footer #mail:hover, footer #mail:focus, footer #mail_mobile:hover, footer #mail_
   .light #button_top {
     bottom: 5%;
   }
+  .light .tooltip {
+    position: fixed;
+  }
+
+  .tooltip:hover .tooltiptext, .tooltipButton:hover .tooltiptextButton {
+    visibility: visible;
+  }
 }
 .dark {
   color: floralwhite;
@@ -461,6 +468,15 @@ footer #mail:hover, footer #mail:focus, footer #mail_mobile:hover, footer #mail_
 .dark .tooltip .tooltiptext img {
   filter: brightness(1000%) hue-rotate(70deg) contrast(4);
 }
+.dark .tooltip {
+  color: floralwhite;
+}
+.dark .tooltip img {
+  filter: invert(4);
+}
+.dark .tooltip:hover {
+  color: #444444;
+}
 .dark nav, .dark details {
   color: floralwhite;
   background-color: #1b1e21;
@@ -470,6 +486,10 @@ footer #mail:hover, footer #mail:focus, footer #mail_mobile:hover, footer #mail_
 }
 .dark nav a:hover, .dark details a:hover {
   background-color: #444444;
+}
+.dark .tooltiptextButton {
+  background-color: #1b1e21 !important;
+  color: floralwhite !important;
 }
 .dark section {
   background-color: #1f4b4c !important;
@@ -490,15 +510,21 @@ footer #mail:hover, footer #mail:focus, footer #mail_mobile:hover, footer #mail_
 .dark section .img_dark_news {
   filter: brightness(150%) hue-rotate(321deg) contrast(4);
 }
-.dark section .tooltip .tooltiptext {
-  background-color: #1b1e21 !important;
-  color: floralwhite !important;
-}
 .dark section #annuaire a, .dark section #utils a, .dark section #glossary a, .dark section #tabs_fiches a {
   color: navajowhite;
 }
 .dark section #annuaire a:hover, .dark section #utils a:hover, .dark section #glossary a:hover, .dark section #tabs_fiches a:hover {
   color: white;
+}
+.dark section #glossary button, .dark section #utils button {
+  border: 2px solid floralwhite;
+  transition: all 150ms ease-in-out;
+}
+.dark section #glossary button img, .dark section #utils button img {
+  filter: invert(4);
+}
+.dark section #glossary button:hover, .dark section #glossary button:focus, .dark section #utils button:hover, .dark section #utils button:focus {
+  background-color: rgba(255, 250, 240, 0.58);
 }
 .dark section .nav_contact img {
   filter: invert(100%) !important;
