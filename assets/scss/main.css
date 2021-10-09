@@ -80,7 +80,7 @@ html {
   padding: 5%;
   position: absolute;
   left: -175%;
-  bottom: 75%;
+  bottom: 120%;
   z-index: 1;
 }
 .light #glossary button, .light #utils button {
